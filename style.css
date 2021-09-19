@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif; 
+    background: #43ADEE;
+    scroll-behavior: smooth;
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 10;
+}
+
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1, ul{
+    font-size: 1.5rem;
+}
+
+nav h1, nav ul{
+    font-size: 1.5rem;
+    flex: 1;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav img {
+    margin-right: 500px;
+}
+
+section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section p{
+    color: white;
+    font-size: 20px;
+    margin: 40px 200px 0px 200px;
+}
+
+section h2 {
+    font-size: 5rem;
+    color: white;
+}
+
+#home {
+    position: relative;
+}
+
+#home::before{
+    content: "";
+    background: url(./imgs/nicolas-thomas-CBydtQDjaJc-unsplash.jpg) no-repeat ;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.9;
+}
+
+#home h2{
+    position: relative; 
+    line-height: 0.9;
+    text-align: center;
+    color: white;
+}
+
+
+
+#tconh{
+    opacity: 0.91;
+    padding: 25px;
+    z-index: 9;
+    height: 250px;
+    width: 1200px;
+    background: linear-gradient(to right, #7d8391, #34383f);
+    border-radius: 50px;
+    transition: opacity 800ms;
+}
+
+#tconh h2{
+    font-weight: 300;
+}
+
+#home p{
+    padding: 0;
+    z-index: 10;
+    position: relative;
+    color: white;
+}
+
+#tconh:hover{
+    opacity: 1;
+}
+
+
+/*about*/
+
+#about {
+    margin-top: 02px;
+    background: url(./imgs/umberto-jXd2FSvcRr8-unsplash.jpg);
+    background-size: cover;
+}
+
+#tcona{
+    opacity: 0.91;
+    padding: 25px;
+    z-index: 9;
+    height: 280px;
+    width: 1200px;
+    background: linear-gradient(to right, #7d8391, #34383f);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#tcona h2{
+    margin-left: 380px;
+    font-weight: 300;
+    padding-bottom: 0;
+}
+
+#tcona p{
+    padding: 0px;
+}
+
+
+#blog{
+    margin-top: 02px;
+    background: url(./imgs/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg);
+    background-size: cover;
+}
+
+
+#tconb{
+    opacity: 0.91;
+    padding: 25px;
+    z-index: 9;
+    height: 280px;
+    width: 1200px;
+    background: linear-gradient(to right, #7d8391, #34383f);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#tconb h2{
+    font-weight: 200;
+}
+
+#tconb button{
+    z-index: 8;
+    background: transparent;
+    outline: none;
+    border: 2px solid #20D1FD;
+    width: 100px;
+    height: 060px;
+    position: absolute;
+    right: 20%;
+    top: 248%;
+    color: white;
+    border-radius: 10%;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#tconb a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+#tconb button:hover{
+    background: tomato;
+    color: royalblue;
+}
+
+#join{
+    margin-top: 02px;
+    background: url(./imgs/yogesh-phuyal-mjwGKmwkDDA-unsplash.jpg);
+    background-size: cover;
+}
+
+#join h2{
+    background:linear-gradient(to right, #46ADB0, #87C2B4);
+    padding: 30px;
+}
+
+
+#join button{
+    height: 100px;
+    width: 500px;
+    margin-top: 30px;
+    background:#3b4252;
+    outline: none;
+    border: 2px solid #35383f;
+    color: white;
+    font-size: 50px;
+    border-radius: 20px;
+    z-index: 9;
+}
+
+#join a{
+    font-weight: 100;
+    z-index: 10;
+}
